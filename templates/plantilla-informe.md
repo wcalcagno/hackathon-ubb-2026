@@ -94,19 +94,25 @@ Reemplace el texto entre corchetes. Las indicaciones en cursiva son guía, no co
 - **Empresas descartadas y por qué.**
 - Verificación realizada en la CMF (bitácora resumida).
 
-### 4.2 Normalización
+### 4.2 La herramienta
+
+- Enlace público a la aplicación construida en Lovable.
+- Cómo se especificó: qué se le pidió y cómo se verificó que la extracción fuera correcta.
+- Cifras contrastadas contra el estado financiero en PDF (al menos dos por empresa).
+
+### 4.3 Normalización
 
 - Moneda de análisis y tipo de cambio aplicado.
 - Principales diferencias de agregación encontradas y cómo se homologaron.
 - Referencia a la tabla de mapeo completa (anexo o archivo adjunto).
 
-### 4.3 Benchmark
+### 4.4 Benchmark
 
 - Indicadores por empresa, con mediana y rango intercuartílico del sector.
 - Outliers identificados y su tratamiento.
 - **Posicionamiento de ASC frente al DSO sectorial.**
 
-### 4.4 Consideraciones sectoriales
+### 4.5 Consideraciones sectoriales
 
 [Cómo afectan NIC 41, la estacionalidad de cosecha, la exposición cambiaria, las cuotas de pesca y los eventos sanitarios a la comparabilidad de las cifras.]
 

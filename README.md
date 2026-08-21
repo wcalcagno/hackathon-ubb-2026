@@ -418,7 +418,7 @@ El equipo debe construir un proceso reproducible que cumpla:
 
 - Descargar las instancias XBRL de las empresas seleccionadas al 31-12-2025.
 - Parsear los archivos identificando los elementos de la taxonomía IFRS relevantes.
-- El parseo se realiza con **Power Query**, que lee XML de forma nativa: un archivo `.xbrl` es un XML y no requiere complementos ni programación.
+- El parseo se resuelve construyendo una herramienta en **Lovable**, describiendo en lenguaje natural la aplicación que se necesita. No hay que programar: hay que especificar bien, y para eso el equipo debe entender la estructura del formato. La secuencia de prompts sugerida está en [`docs/03-guia-xbrl-cmf.md`](docs/03-guia-xbrl-cmf.md).
 
 #### 5.5.2 Normalización
 
@@ -480,10 +480,10 @@ Cada equipo entrega, al cierre del bloque técnico de la jornada, una carpeta co
 | # | Entregable | Formato | Requisito |
 |---|---|---|---|
 | 1 | Modelo y tablero de Cuentas por Cobrar | `.pbix` o carpeta PBIP | Modelo dimensional, medidas DAX documentadas |
-| 2 | Herramienta de benchmark XBRL | `.pbix` o libro de Excel con Power Query | Reproducible al actualizar, con tabla de mapeo incluida |
+| 2 | Herramienta de benchmark XBRL | Enlace público a la aplicación en Lovable | Funcionando, con tabla de mapeo y tabla de hechos exportadas |
 | 3 | Informe ejecutivo | PDF, máximo 10 páginas | Portada, resumen ejecutivo, metodología, hallazgos A, hallazgos B, conclusiones, anexo de prompts de IA |
 | 4 | Presentación oral | `.pptx` o equivalente, máximo 12 láminas | Para defensa ante jurado |
-| 5 | Prototipo web (opcional) | Enlace público | Construido en Lovable u otra plataforma equivalente |
+| 5 | Extensión del prototipo (opcional) | Enlace público | Funcionalidad adicional sobre la aplicación del entregable 2: por ejemplo, incorporar la cartera de ASC, simular escenarios o publicar el tablero de hallazgos |
 
 Las plantillas de los entregables 3 y 4 están en [`templates/`](templates/). Las instrucciones de entrega, en [`entregas/README.md`](entregas/README.md).
 
@@ -499,9 +499,9 @@ Las plantillas de los entregables 3 y 4 están en [`templates/`](templates/). La
 | Calidad del modelo de datos y dominio de las herramientas | 25% | Modelo dimensional correcto, calidad de las medidas DAX, tratamiento de la calidad de datos, robustez del parseo XBRL |
 | Capacidad de comunicación y narrativa de los hallazgos | 20% | Claridad del tablero, coherencia del relato, orientación a la toma de decisiones |
 | Aplicabilidad y propuestas accionables | 15% | Pertinencia de las recomendaciones de control interno, viabilidad de implementación |
-| Innovación y uso complementario de IA o herramientas modernas | 15% | Uso declarado y efectivo de IA generativa, prototipo complementario, soluciones creativas al problema de normalización XBRL |
+| Innovación y uso complementario de IA o herramientas modernas | 15% | Calidad de los prompts con que se construyó la herramienta del Componente B, uso declarado y validado de IA generativa, soluciones creativas al problema de normalización XBRL |
 
-**Criterio de desempate:** entrega del prototipo opcional y profundidad en el tratamiento de las particularidades sectoriales descritas en la sección 5.6.
+**Criterio de desempate:** entrega de la extensión opcional del prototipo y profundidad en el tratamiento de las particularidades sectoriales descritas en la sección 5.6.
 
 ---
 
@@ -517,9 +517,9 @@ Las plantillas de los entregables 3 y 4 están en [`templates/`](templates/). La
 ### 8.2 Herramientas permitidas
 
 - Power BI Desktop (obligatorio para el Componente A).
-- Excel y Power Query, incluido el parseo XBRL del Componente B.
+- Excel y Power Query.
 - Herramientas de IA generativa, con declaración obligatoria de los prompts utilizados.
-- Lovable u otras plataformas de desarrollo asistido.
+- Lovable, obligatorio para construir la herramienta del Componente B.
 
 ### 8.3 Requisitos técnicos
 

@@ -16,6 +16,8 @@ Declarar el uso de IA **no resta puntaje**: forma parte del criterio de innovaci
 
 Una fila por prompt relevante. No es necesario registrar cada interacción trivial; sí toda aquella cuya salida haya influido en un número, un criterio o una conclusión del informe.
 
+**Obligatorio:** incluya los prompts con que construyó la herramienta de benchmark en Lovable. Son la memoria técnica del Componente B y se evalúan dentro del criterio de innovación de la rúbrica.
+
 | # | Objetivo | Prompt (resumido o textual) | Qué devolvió | Cómo se validó | ¿Se usó en el entregable? |
 |---|---|---|---|---|---|
 | 1 | | | | | Sí / No / Con modificaciones |

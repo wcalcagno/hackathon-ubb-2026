@@ -19,7 +19,7 @@ Un minuto por lámina es el ritmo real. Si una lámina necesita más de 90 segun
 | 7 | Provisión IFRS 9 | Matriz propuesta y cómo se derivó de los datos | 1,5 min |
 | 8 | Conciliación financiero-tributaria | Provisión vs. castigo art. 31 N° 4 | 1 min |
 | 9 | Proyección de caja 2026 | Cascada y proyección mensual con escenarios | 1,5 min |
-| 10 | Benchmark sectorial | ASC frente a la mediana y el RIC del sector en DSO | 1,5 min |
+| 10 | Benchmark sectorial | La herramienta en Lovable y el posicionamiento de ASC frente a la mediana y el RIC del sector en DSO | 1,5 min |
 | 11 | Recomendaciones | Las cinco propuestas de control interno, en una lámina | 1 min |
 | 12 | Cierre | Las tres decisiones que se piden al Directorio | 30 s |
 
@@ -41,8 +41,9 @@ Prepare las respuestas antes de subir a exponer:
 3. ¿Cómo trataron la cartera cedida a factoring, y dónde quedó la contingencia?
 4. ¿Qué pasa con su proyección si el tipo de cambio se mueve un 10%?
 5. ¿Por qué esas cinco empresas y no otras en el peer group?
-6. ¿Cuánto de la brecha de DSO frente al sector es mezcla de negocios y cuánto es gestión de cobranza?
-7. Si el Directorio solo puede implementar una de sus cinco recomendaciones, ¿cuál y por qué?
+6. ¿Cómo verificaron que las cifras que muestra su aplicación son las que la empresa realmente reportó?
+7. ¿Cuánto de la brecha de DSO frente al sector es mezcla de negocios y cuánto es gestión de cobranza?
+8. Si el Directorio solo puede implementar una de sus cinco recomendaciones, ¿cuál y por qué?
 
 ## Errores frecuentes de la defensa
 

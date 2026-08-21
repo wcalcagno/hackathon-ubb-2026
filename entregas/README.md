@@ -11,11 +11,11 @@ Una única carpeta comprimida (`.zip`) por equipo, con el siguiente contenido:
 | # | Entregable | Formato | Obligatorio |
 |---|---|---|---|
 | 1 | Modelo y tablero de Cuentas por Cobrar | `.pbix` o carpeta PBIP | Sí |
-| 2 | Herramienta de benchmark XBRL | `.pbix` o libro de Excel con Power Query | Sí |
+| 2 | Herramienta de benchmark XBRL | Enlace público a la aplicación en Lovable | Sí |
 | 3 | Informe ejecutivo | PDF, máximo 10 páginas | Sí |
 | 4 | Presentación de defensa | `.pptx` o equivalente, máximo 12 láminas | Sí |
 | 5 | Archivos XBRL descargados de la CMF | `.xbrl` / `.zip` originales | Sí |
-| 6 | Prototipo web | Enlace público en un `.txt` o dentro del informe | Opcional |
+| 6 | Extensión del prototipo | Enlace público en un `.txt` o dentro del informe | Opcional |
 
 ## 2. Nombre del archivo
 
@@ -34,9 +34,10 @@ EQUIPO-07-marea-alta/
 ├── 01-tablero-cxc/
 │   └── cuentas-por-cobrar.pbix
 ├── 02-benchmark-xbrl/
-│   ├── benchmark.pbix            (o libro de Excel con Power Query)
-│   ├── tabla-mapeo.xlsx
-│   └── xbrl/                    (archivos originales descargados de la CMF)
+│   ├── enlace-lovable.txt        (URL pública de la aplicación)
+│   ├── tabla-mapeo.csv
+│   ├── hechos-extraidos.csv
+│   └── xbrl/                     (archivos originales descargados de la CMF)
 ├── 03-informe/
 │   └── informe-ejecutivo.pdf
 ├── 04-presentacion/
@@ -71,7 +72,9 @@ Las entregas fuera de plazo se reciben, pero se evalúan con la penalización qu
 
 - [ ] Al menos cinco empresas del Grupo 1, verificadas en la CMF.
 - [ ] Está la bitácora de descarga (empresa, RUT, URL, fecha, período, moneda).
-- [ ] Está la tabla de mapeo indicador-elemento-empresa.
+- [ ] Está la tabla de mapeo indicador-elemento-empresa, exportada desde la aplicación.
+- [ ] El enlace de Lovable abre y la aplicación funciona desde otro equipo.
+- [ ] Al menos dos cifras por empresa fueron contrastadas contra el estado financiero en PDF.
 - [ ] El benchmark usa la mediana y el rango intercuartílico, no el promedio.
 - [ ] Los outliers están identificados y su tratamiento justificado.
 - [ ] Está el posicionamiento de ASC frente al DSO sectorial.
