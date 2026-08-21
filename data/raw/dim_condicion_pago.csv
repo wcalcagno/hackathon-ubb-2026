@@ -1,0 +1,7 @@
+﻿id_condicion;descripcion;dias_credito
+CP00;Contado;0
+CP30;30 dias;30
+CP45;45 dias;45
+CP60;60 dias;60
+CP90;90 dias;90
+CP120;120 dias;120

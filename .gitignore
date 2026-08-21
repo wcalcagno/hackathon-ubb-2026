@@ -1,0 +1,23 @@
+# Archivos XBRL descargados desde la CMF por cada equipo
+data/xbrl/**
+!data/xbrl/README.md
+
+# Entregas de los equipos
+entregas/**
+!entregas/README.md
+
+# Power BI
+*.pbix
+*.pbip
+.pbi/
+*.tmp
+
+# Ofimatica
+~$*
+*.xlsx#
+.~lock.*
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini

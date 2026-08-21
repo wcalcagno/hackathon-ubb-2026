@@ -1,0 +1,10 @@
+# Preservar los finales de linea LF de los datos en cualquier plataforma.
+* text=auto eol=lf
+*.csv text eol=lf
+*.md text eol=lf
+
+# Ofimatica: binarios, no diffear ni convertir
+*.docx binary
+*.pptx binary
+*.xlsx binary
+*.pbix binary
