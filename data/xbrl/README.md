@@ -39,7 +39,7 @@ data/xbrl/
 
 ## 4. Bitácora de descarga (obligatoria)
 
-Registre esta tabla en el informe. Es la evidencia de que el análisis es reproducible y trazable a la fuente oficial.
+Tenga esta tabla a mano al exponer. Es la evidencia de que el análisis es reproducible y trazable a la fuente oficial.
 
 | Empresa | RUT | Fecha de descarga | URL exacta | Período | Consolidado / Individual | Moneda de presentación | Archivo |
 |---|---|---|---|---|---|---|---|
@@ -58,4 +58,4 @@ Si una empresa no publicó al 31-12-2025: documéntelo, exclúyala, reemplácela
 
 ---
 
-> Los archivos descargados pueden pesar varios MB. Si va a versionar su trabajo en Git, considere que el `.gitignore` de este repositorio excluye los archivos XBRL descargados; para la entrega, inclúyalos en el ZIP según las instrucciones de [`entregas/README.md`](../../entregas/README.md).
+> Los archivos descargados pueden pesar varios MB y el `.gitignore` de este repositorio los excluye a propósito. Consérvelos en su equipo: si el jurado cuestiona una cifra, el archivo original es la única forma de zanjarlo.

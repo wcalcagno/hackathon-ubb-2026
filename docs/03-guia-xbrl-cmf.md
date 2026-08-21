@@ -202,14 +202,14 @@ Nombres habituales en el espacio `ifrs-full`. **Verifique cada uno contra el arc
 
 ### 5.2 Tabla de mapeo
 
-Entregable obligatorio del Componente B. Una fila por indicador y empresa:
+Obligatoria: es lo que permite al jurado verificar el análisis. Una fila por indicador y empresa:
 
 | Indicador | Empresa | Elemento(s) de la taxonomía | Contexto usado | Unidad | Valor | Observación |
 |---|---|---|---|---|---|---|
 | DSO sectorial | Empresa A | `TradeAndOtherCurrentReceivables` / `Revenue` | `I-2025-12-31` / `D-2025` | USD | 62,4 | Línea única |
 | DSO sectorial | Empresa B | `CurrentTradeReceivables` / `RevenueFromContractsWithCustomers` | ... | CLP | 48,1 | Desagregado; se toma solo comercial |
 
-Sin esta tabla, el jurado no puede verificar el análisis y el componente se evalúa como no reproducible.
+Sin esta tabla, el jurado no puede verificar el análisis y el componente se evalúa como no reproducible. Téngala a la vista durante la ronda de preguntas.
 
 ### 5.3 Controles de calidad recomendados
 
@@ -239,7 +239,7 @@ Y ahí está el verdadero desafío del componente. Lovable escribe el código qu
 | **Pida ver la tabla intermedia** | Antes de calcular indicadores, exija ver los hechos extraídos. Si la extracción está mal, todo lo demás está mal |
 | **Sea específico con los nombres** | Diga `ifrs-full:Assets`, no "los activos". El nombre exacto del elemento evita que la aplicación adivine |
 | **Verifique contra el PDF** | Tome dos o tres cifras por empresa y compárelas con el estado financiero publicado. Es el único control que no se puede saltar |
-| **Guarde los prompts** | Van al anexo obligatorio del informe. Además, son la bitácora de cómo llegó al resultado |
+| **No borre el historial** | El jurado puede pedirle los prompts. Lovable los conserva, y son la bitácora de cómo llegó al resultado |
 
 > **Advertencia:** una aplicación que muestra un DSO de 47 días con un gráfico impecable no es evidencia de que el dato sea correcto. Si el equipo no puede explicar de qué contexto XBRL salió cada cifra, el componente se evalúa como no fundamentado, por bonita que sea la interfaz.
 
@@ -336,7 +336,7 @@ empresa efectivamente reportó.
 Si una empresa no reporta el elemento asignado, marca la celda en rojo y deja
 el valor vacío. No la rellenes con el dato de otra empresa ni con cero.
 
-La tabla debe poder exportarse a CSV: es un entregable obligatorio.
+La tabla debe poder exportarse a CSV y mostrarse al jurado.
 ```
 
 **Prompt 6 — Moneda de presentación**
@@ -432,12 +432,14 @@ Muéstrame, para la empresa [NOMBRE], todos los hechos del elemento
 contra el estado financiero en PDF.
 ```
 
-### 6.4 Qué entregar
+### 6.4 Qué debe poder mostrar
 
-- El **enlace público** a la aplicación en Lovable, funcionando.
-- La **tabla de mapeo** exportada.
-- La **tabla de hechos extraídos**, que es la evidencia de la extracción.
-- Los **prompts utilizados**, en el anexo del informe.
+No hay entrega de archivos: todo se exhibe durante la exposición. A las 16:00 debe tener abierto y funcionando:
+
+- La **aplicación en Lovable**, con su enlace público.
+- La **tabla de mapeo**, que es donde se ve el criterio del equipo.
+- La **tabla de hechos extraídos**, que es la evidencia de que la extracción es correcta.
+- El **historial de prompts**, por si el jurado pregunta cómo lo construyó.
 
 ---
 

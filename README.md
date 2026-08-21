@@ -15,7 +15,7 @@ Repositorio oficial del caso. Toda la información que los equipos necesitan par
 3. [Estructura del repositorio](#3-estructura-del-repositorio)
 4. [Componente A: Gestión de Cuentas por Cobrar](#4-componente-a-gestión-de-cuentas-por-cobrar)
 5. [Componente B: Benchmark sectorial con XBRL desde la CMF](#5-componente-b-benchmark-sectorial-con-xbrl-desde-la-cmf)
-6. [Entregables](#6-entregables)
+6. [Qué se expone](#6-qué-se-expone)
 7. [Rúbrica de evaluación](#7-rúbrica-de-evaluación)
 8. [Herramientas y ambiente de trabajo](#8-herramientas-y-ambiente-de-trabajo)
 9. [Preguntas frecuentes](#9-preguntas-frecuentes)
@@ -69,25 +69,25 @@ Todo debe estar sustentado en un modelo de datos y visualizado en Power BI.
 |---|---|
 | 10:00 | Inicio del bloque técnico |
 | 13:00 – 14:00 | Almuerzo |
-| 16:00 | **Cierre y entrega.** No se reciben modificaciones después de esta hora |
-| Desde 16:00 | Pitch de 5 minutos por equipo, más 5 minutos de preguntas del jurado |
+| 16:00 | **Cierre del trabajo.** Desde esta hora no se modifica nada: solo se expone |
+| Desde 16:00 | Exposición: 5 minutos de pitch por equipo, más 5 minutos de preguntas del jurado |
 
 **Tiempo neto de trabajo: cinco horas.** Es poco para lo que pide el caso, y esa restricción es deliberada: el criterio para decidir qué profundizar y qué dejar en un nivel suficiente también se evalúa.
 
 ### 2.2 Distribución sugerida
 
-El caso no se resuelve en serie. Si el equipo entero trabaja sobre Power BI hasta las 15:00, no habrá informe ni pitch. Trabajen en paralelo desde el primer minuto:
+El caso no se resuelve en serie. Si el equipo entero trabaja sobre Power BI hasta las 15:00, no habrá relato que contar. Trabajen en paralelo desde el primer minuto:
 
-| Franja | Componente A · Power BI (2 personas) | Componente B · Lovable + CMF (1 persona) | Informe y pitch (1 persona) |
+| Franja | Componente A · Power BI (2 personas) | Componente B · Lovable + CMF (1 persona) | Relato y pitch (1 persona) |
 |---|---|---|---|
 | 10:00 – 10:15 | Lectura conjunta del caso, reparto de roles y acuerdo de criterios | | |
-| 10:15 – 11:30 | Carga, controles de calidad y modelo dimensional | Verificación en la CMF, descarga de los XBRL y prompts de extracción | Esqueleto del informe; registra cada decisión de A y B a medida que ocurre |
-| 11:30 – 13:00 | Medidas: saldo insoluto, mora, aging, clasificación e indicadores | Tabla de mapeo e indicadores por empresa | Metodología y hallazgos preliminares |
+| 10:15 – 11:30 | Carga, controles de calidad y modelo dimensional | Verificación en la CMF, descarga de los XBRL y prompts de extracción | Registra cada decisión de A y B a medida que ocurre: son las respuestas de la ronda de preguntas |
+| 11:30 – 13:00 | Medidas: saldo insoluto, mora, aging, clasificación e indicadores | Tabla de mapeo e indicadores por empresa | Hilo conductor del pitch y hallazgos preliminares |
 | 13:00 – 14:00 | Almuerzo | | |
-| 14:00 – 15:20 | Matriz IFRS 9, castigo tributario y proyección de caja | Mediana, rango intercuartílico, posición de ASC y exportación de tablas | Provisión, conciliación y recomendaciones de control interno |
+| 14:00 – 15:20 | Matriz IFRS 9, castigo tributario y proyección de caja | Mediana, rango intercuartílico, posición de ASC y exportación de tablas | Recomendaciones de control interno y guion del pitch |
 | 15:20 – 15:45 | Todo el equipo: cierre del tablero y de la narrativa | | |
 | 15:45 – 15:55 | Todo el equipo: las 6 láminas del pitch y un ensayo cronometrado | | |
-| 15:55 – 16:00 | Todo el equipo: empaquetado del ZIP y entrega | | |
+| 15:55 – 16:00 | Todo el equipo: computador listo, con el tablero y la aplicación abiertos | | |
 
 ### 2.3 Hitos de control
 
@@ -137,14 +137,9 @@ hackathon-ubb-2026/
 │   │   └── dim_calendario.csv         # Dimensión de fecha
 │   └── xbrl/
 │       └── README.md                  # Instrucciones de descarga desde la CMF
-├── templates/
-│   ├── plantilla-informe.md           # Estructura exigida del informe ejecutivo
-│   ├── plantilla-informe.docx         # La misma estructura, lista para escribir
-│   ├── plantilla-presentacion.md      # Guía del pitch de 5 minutos
-│   ├── plantilla-presentacion.pptx    # Las 6 láminas, listas para completar
-│   └── plantilla-anexo-prompts.md     # Formato del anexo obligatorio de uso de IA
-└── entregas/
-    └── README.md                      # Instrucciones de entrega por equipo
+└── templates/
+    ├── plantilla-presentacion.md      # Guía del pitch de 5 minutos
+    └── plantilla-presentacion.pptx    # Las 6 láminas, listas para completar
 ```
 
 ---
@@ -377,7 +372,7 @@ El diseño del caso incorpora situaciones deliberadas. Un equipo con un análisi
 
 ### 4.6 Recomendaciones de control interno
 
-El informe debe cerrar con al menos **cinco propuestas de mejora de control interno**, derivadas directamente de los hallazgos cuantitativos. Cada propuesta debe indicar:
+El análisis debe llegar a al menos **cinco propuestas de mejora de control interno**, derivadas directamente de los hallazgos cuantitativos. El pitch presenta las tres más relevantes; las cinco deben poder defenderse en la ronda de preguntas. Cada propuesta debe indicar:
 
 - Debilidad detectada (con evidencia numérica del análisis).
 - Riesgo asociado.
@@ -467,7 +462,7 @@ Este es el punto crítico del componente. Las empresas **no reportan de forma ho
 - **Contextos XBRL:** cada hecho reportado tiene un contexto (entidad, período, dimensiones). Debe filtrarse correctamente el contexto consolidado del período anual, descartando segmentos y períodos comparativos.
 - **Signos y unidades:** verificar el atributo `unitRef` y el signo de los elementos, especialmente en pasivos y en flujos de efectivo.
 
-Se debe entregar una **tabla de mapeo** que documente, para cada indicador construido, qué elemento de la taxonomía IFRS se usó en cada empresa.
+El equipo debe poder mostrar una **tabla de mapeo** que documente, para cada indicador construido, qué elemento de la taxonomía IFRS se usó en cada empresa.
 
 #### 5.5.3 Cálculo de indicadores
 
@@ -511,21 +506,23 @@ Un análisis que compare márgenes de una pesquera extractiva contra una salmoni
 
 ---
 
-## 6. Entregables
+## 6. Qué se expone
 
-Cada equipo entrega, al cierre del bloque técnico de la jornada, una carpeta comprimida con:
+**No hay entrega de archivos.** Al cierre del bloque técnico, cada equipo expone su trabajo ante el jurado: **5 minutos de pitch y 5 minutos de preguntas**. Lo que el equipo quiera hacer valer tiene que estar en esa exposición, o poder mostrarse en el momento.
 
-| # | Entregable | Formato | Requisito |
-|---|---|---|---|
-| 1 | Modelo y tablero de Cuentas por Cobrar | `.pbix` o carpeta PBIP | Modelo dimensional, medidas DAX documentadas |
-| 2 | Herramienta de benchmark XBRL | Enlace público a la aplicación en Lovable | Funcionando, con tabla de mapeo y tabla de hechos exportadas |
-| 3 | Informe ejecutivo | PDF, máximo 10 páginas | Portada, resumen ejecutivo, metodología, hallazgos A, hallazgos B, conclusiones, anexo de prompts de IA |
-| 4 | Pitch | `.pptx` o equivalente, máximo 6 láminas | Para exponer ante el jurado |
-| 5 | Extensión del prototipo (opcional) | Enlace público | Funcionalidad adicional sobre la aplicación del entregable 2: por ejemplo, incorporar la cartera de ASC, simular escenarios o publicar el tablero de hallazgos |
+| # | Qué | Estado exigido a las 16:00 |
+|---|---|---|
+| 1 | **Pitch** | `.pptx` o equivalente, máximo 6 láminas, ensayado con cronómetro. Plantilla en [`templates/`](templates/) |
+| 2 | **Tablero de Cuentas por Cobrar** | Abierto en Power BI y funcionando, listo para navegarlo si el jurado lo pide |
+| 3 | **Herramienta de benchmark XBRL** | La aplicación de Lovable abierta y operativa, con la tabla de mapeo a la vista |
+| 4 | **Respaldo de las decisiones** | Criterios de calidad de datos, matriz de provisión, curva de recuperación y prompts: a mano para responder |
+| 5 | **Extensión del prototipo** (opcional) | Funcionalidad adicional sobre la aplicación: incorporar la cartera de ASC, simular escenarios o publicar los hallazgos |
 
-Las plantillas de los entregables 3 y 4 están en [`templates/`](templates/). Las instrucciones de entrega, en [`entregas/README.md`](entregas/README.md).
+**Pitch:** 5 minutos por equipo. Al minuto cinco se corta la exposición, haya llegado o no al cierre.
 
-**Pitch:** 5 minutos por equipo, seguidos de 5 minutos de preguntas del jurado. Al minuto cinco se corta la exposición, haya llegado o no al cierre.
+**Preguntas:** 5 minutos. Aquí el jurado verifica lo que el pitch no alcanza a mostrar: de dónde salió cada cifra, qué se hizo con los datos sucios, por qué esos porcentajes de provisión, cómo se validó la aplicación. Un análisis profundo que no se defiende no puntúa.
+
+> **Práctico:** lleve el computador con todo abierto antes de que empiece la ronda. Entre equipo y equipo no hay tiempo para cargar archivos ni para buscar la contraseña del wifi.
 
 ---
 
@@ -539,7 +536,7 @@ Las plantillas de los entregables 3 y 4 están en [`templates/`](templates/). La
 | Aplicabilidad y propuestas accionables | 15% | Pertinencia de las recomendaciones de control interno, viabilidad de implementación |
 | Innovación y uso complementario de IA o herramientas modernas | 15% | Calidad de los prompts con que se construyó la herramienta del Componente B, uso declarado y validado de IA generativa, soluciones creativas al problema de normalización XBRL |
 
-**Criterio de desempate:** entrega de la extensión opcional del prototipo y profundidad en el tratamiento de las particularidades sectoriales descritas en la sección 5.6.
+**Criterio de desempate:** la extensión opcional del prototipo y la profundidad en el tratamiento de las particularidades sectoriales descritas en la sección 5.6.
 
 ---
 
@@ -567,7 +564,7 @@ Cada equipo debe traer sus propios equipos portátiles con Power BI Desktop inst
 
 - La IA generativa es una herramienta de apoyo, no un reemplazo del criterio profesional.
 - Toda salida generada por IA debe validarse contra normativa vigente o fuentes oficiales (IFRS, SII, CMF).
-- Los prompts utilizados deben documentarse en un anexo del informe, según [`templates/plantilla-anexo-prompts.md`](templates/plantilla-anexo-prompts.md).
+- Los prompts utilizados deben poder mostrarse al jurado si los solicita. Lovable conserva el historial de la conversación: no lo borre.
 - No se permite asistencia externa de docentes ni profesionales durante la jornada.
 
 ---

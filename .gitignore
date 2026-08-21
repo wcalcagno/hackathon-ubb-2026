@@ -2,10 +2,6 @@
 data/xbrl/**
 !data/xbrl/README.md
 
-# Entregas de los equipos
-entregas/**
-!entregas/README.md
-
 # Power BI
 *.pbix
 *.pbip

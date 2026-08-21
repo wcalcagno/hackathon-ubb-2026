@@ -211,7 +211,7 @@ Esta tabla define el plazo **pactado**. La `fecha_vencimiento` de la factura es 
 | 3 | `tipo_cambio_clp` | decimal | Pesos por unidad de moneda. Para `CLP` siempre `1.00`. |
 | 4 | `tipo_publicacion` | texto | `OBSERVADO` en días hábiles; `ARRASTRE` en fines de semana y feriados, donde se repite el último valor publicado. |
 
-La serie **termina el 31-12-2025**. Cualquier tipo de cambio usado para proyectar 2026 es un supuesto del equipo y debe declararse de manera explícita en el informe.
+La serie **termina el 31-12-2025**. Cualquier tipo de cambio usado para proyectar 2026 es un supuesto del equipo y debe declararse de manera explícita al exponer.
 
 ---
 
@@ -261,7 +261,7 @@ Construir este modelo es parte del desafío, y las decisiones de diseño se eval
 
 ## 12. Checklist de validación previa
 
-Antes de calcular un solo indicador, verifique al menos lo siguiente. Documente el resultado de cada control en el informe: forma parte de la evaluación.
+Antes de calcular un solo indicador, verifique al menos lo siguiente. Deje registro del resultado de cada control: el jurado puede preguntar por cualquiera de ellos, y las respuestas forman parte de la evaluación.
 
 | # | Control | Pregunta |
 |---|---|---|

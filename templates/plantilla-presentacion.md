@@ -1,8 +1,8 @@
 # Plantilla — Pitch
 
-Entregable N° 4. **Máximo 6 láminas. 5 minutos de pitch**, seguidos de 5 minutos de preguntas del jurado.
+**Máximo 6 láminas. 5 minutos de pitch**, seguidos de 5 minutos de preguntas del jurado. No hay informe escrito ni entrega de archivos: la exposición es el entregable.
 
-Cinco minutos son trescientos segundos. No alcanza para contar lo que hicieron: alcanza para decir **qué encontraron, cuánto vale y qué hay que hacer**. Todo lo demás va en el informe, que el jurado ya tiene.
+Cinco minutos son trescientos segundos. No alcanza para contar lo que hicieron: alcanza para decir **qué encontraron, cuánto vale y qué hay que hacer**. Todo lo demás se defiende en la ronda de preguntas, que dura otros cinco minutos y es donde el jurado verifica el rigor.
 
 ---
 
@@ -43,11 +43,11 @@ Cuatro segundos, y ya hay una tesis. El resto del pitch la sostiene.
 
 ## Qué NO va en el pitch
 
-Esto se evalúa en otros entregables. Ponerlo acá cuesta tiempo y no suma puntaje:
+Nada de esto desaparece de la evaluación: el jurado lo pregunta después. Ponerlo en el pitch cuesta tiempo y no suma puntaje:
 
-- La metodología y el tratamiento de la calidad de datos → van en el informe.
-- El diagrama del modelo dimensional y las medidas DAX → se evalúan en el `.pbix`.
-- Cómo construyeron la aplicación en Lovable → va en el anexo de prompts.
+- La metodología y el tratamiento de la calidad de datos → ténganlos listos para la ronda de preguntas.
+- El diagrama del modelo dimensional y las medidas DAX → se muestran en el tablero si el jurado lo pide.
+- Cómo construyeron la aplicación en Lovable → muestren el historial de prompts si preguntan.
 - Capturas del tablero como relleno visual → si muestra el tablero, que sea para señalar un hallazgo concreto.
 - La lista de los integrantes ocupando media lámina.
 
@@ -56,7 +56,7 @@ Esto se evalúa en otros entregables. Ponerlo acá cuesta tiempo y no suma punta
 ## Qué evalúa el jurado
 
 - Que haya una **tesis clara** y que todo lo mostrado la sostenga.
-- Que cada cifra del pitch **coincida** con el informe y con el tablero.
+- Que cada cifra del pitch **coincida** con el tablero y con la aplicación.
 - Que las recomendaciones se deriven de la evidencia mostrada, no de generalidades sobre control interno.
 - Que el equipo pueda **explicar cómo obtuvo** cualquier número que muestre.
 - Que respeten los cinco minutos. Al minuto cinco se corta, hayan llegado o no a las conclusiones.

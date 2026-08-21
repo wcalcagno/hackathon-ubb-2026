@@ -168,7 +168,7 @@ La provisión financiera por pérdida crediticia esperada de IFRS 9, en cambio, 
 
 ### 3.3 Advertencia
 
-El caso es académico. Las conclusiones tributarias deben validarse contra el texto legal vigente y los pronunciamientos del SII. Si el equipo usa IA para redactar esta sección, la validación contra fuente oficial es obligatoria y el prompt debe declararse en el anexo.
+El caso es académico. Las conclusiones tributarias deben validarse contra el texto legal vigente y los pronunciamientos del SII. Si el equipo usa IA para resolver esta sección, la validación contra fuente oficial es obligatoria y debe poder mostrar el prompt al jurado.
 
 ---
 
