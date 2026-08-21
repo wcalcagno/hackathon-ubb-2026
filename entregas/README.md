@@ -13,7 +13,7 @@ Una única carpeta comprimida (`.zip`) por equipo, con el siguiente contenido:
 | 1 | Modelo y tablero de Cuentas por Cobrar | `.pbix` o carpeta PBIP | Sí |
 | 2 | Herramienta de benchmark XBRL | Enlace público a la aplicación en Lovable | Sí |
 | 3 | Informe ejecutivo | PDF, máximo 10 páginas | Sí |
-| 4 | Presentación de defensa | `.pptx` o equivalente, máximo 12 láminas | Sí |
+| 4 | Pitch | `.pptx` o equivalente, máximo 6 láminas | Sí |
 | 5 | Archivos XBRL descargados de la CMF | `.xbrl` / `.zip` originales | Sí |
 | 6 | Extensión del prototipo | Enlace público en un `.txt` o dentro del informe | Opcional |
 
@@ -40,8 +40,8 @@ EQUIPO-07-marea-alta/
 │   └── xbrl/                     (archivos originales descargados de la CMF)
 ├── 03-informe/
 │   └── informe-ejecutivo.pdf
-├── 04-presentacion/
-│   └── defensa.pptx
+├── 04-pitch/
+│   └── pitch.pptx
 └── 05-prototipo/
     └── enlace.txt               (opcional)
 ```
@@ -82,7 +82,8 @@ Las entregas fuera de plazo se reciben, pero se evalúan con la penalización qu
 
 **Formales**
 
-- [ ] El informe no supera 10 páginas y la presentación no supera 12 láminas.
+- [ ] El informe no supera 10 páginas y el pitch no supera 6 láminas.
+- [ ] El pitch fue ensayado con cronómetro y cabe en 5 minutos.
 - [ ] Está el anexo de prompts de IA, con las validaciones realizadas.
 - [ ] El nombre del archivo sigue la convención.
 - [ ] El ZIP abre correctamente y pesa menos de 250 MB.

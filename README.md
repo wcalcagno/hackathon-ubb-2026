@@ -11,7 +11,7 @@ Repositorio oficial del caso. Toda la información que los equipos necesitan par
 ## Tabla de contenidos
 
 1. [Contexto general](#1-contexto-general)
-2. [Cómo partir](#2-cómo-partir)
+2. [La jornada](#2-la-jornada)
 3. [Estructura del repositorio](#3-estructura-del-repositorio)
 4. [Componente A: Gestión de Cuentas por Cobrar](#4-componente-a-gestión-de-cuentas-por-cobrar)
 5. [Componente B: Benchmark sectorial con XBRL desde la CMF](#5-componente-b-benchmark-sectorial-con-xbrl-desde-la-cmf)
@@ -61,7 +61,45 @@ Todo debe estar sustentado en un modelo de datos y visualizado en Power BI.
 
 ---
 
-## 2. Cómo partir
+## 2. La jornada
+
+### 2.1 Horario
+
+| Hora | Bloque |
+|---|---|
+| 10:00 | Inicio del bloque técnico |
+| 13:00 – 14:00 | Almuerzo |
+| 16:00 | **Cierre y entrega.** No se reciben modificaciones después de esta hora |
+| Desde 16:00 | Pitch de 5 minutos por equipo, más 5 minutos de preguntas del jurado |
+
+**Tiempo neto de trabajo: cinco horas.** Es poco para lo que pide el caso, y esa restricción es deliberada: el criterio para decidir qué profundizar y qué dejar en un nivel suficiente también se evalúa.
+
+### 2.2 Distribución sugerida
+
+El caso no se resuelve en serie. Si el equipo entero trabaja sobre Power BI hasta las 15:00, no habrá informe ni pitch. Trabajen en paralelo desde el primer minuto:
+
+| Franja | Componente A · Power BI (2 personas) | Componente B · Lovable + CMF (1 persona) | Informe y pitch (1 persona) |
+|---|---|---|---|
+| 10:00 – 10:15 | Lectura conjunta del caso, reparto de roles y acuerdo de criterios | | |
+| 10:15 – 11:30 | Carga, controles de calidad y modelo dimensional | Verificación en la CMF, descarga de los XBRL y prompts de extracción | Esqueleto del informe; registra cada decisión de A y B a medida que ocurre |
+| 11:30 – 13:00 | Medidas: saldo insoluto, mora, aging, clasificación e indicadores | Tabla de mapeo e indicadores por empresa | Metodología y hallazgos preliminares |
+| 13:00 – 14:00 | Almuerzo | | |
+| 14:00 – 15:20 | Matriz IFRS 9, castigo tributario y proyección de caja | Mediana, rango intercuartílico, posición de ASC y exportación de tablas | Provisión, conciliación y recomendaciones de control interno |
+| 15:20 – 15:45 | Todo el equipo: cierre del tablero y de la narrativa | | |
+| 15:45 – 15:55 | Todo el equipo: las 6 láminas del pitch y un ensayo cronometrado | | |
+| 15:55 – 16:00 | Todo el equipo: empaquetado del ZIP y entrega | | |
+
+### 2.3 Hitos de control
+
+Tres momentos para mirar el reloj y decidir. Si un hito no se cumple, **recorten alcance en vez de recortar el cierre**: un análisis más simple bien comunicado puntúa más que uno ambicioso que nadie alcanzó a presentar.
+
+| Hora | Debe estar listo |
+|---|---|
+| 11:30 | Los datos cargan y cuadran; la aplicación de Lovable ya extrae hechos |
+| 13:00 | Los indicadores obligatorios calculan; existe un DSO sectorial preliminar |
+| 15:20 | **Congelamiento del análisis.** No se toca más el modelo: desde aquí solo se comunica |
+
+### 2.4 Cómo partir
 
 1. **Descargue el repositorio** completo (botón `Code > Download ZIP`, o `git clone`).
 2. **Lea `docs/01-diccionario-datos.md`** antes de conectar nada. Ahí están las convenciones de formato y las trampas conocidas de los archivos.
@@ -102,8 +140,8 @@ hackathon-ubb-2026/
 ├── templates/
 │   ├── plantilla-informe.md           # Estructura exigida del informe ejecutivo
 │   ├── plantilla-informe.docx         # La misma estructura, lista para escribir
-│   ├── plantilla-presentacion.md      # Guion sugerido de la defensa oral
-│   ├── plantilla-presentacion.pptx    # Las 12 láminas, listas para completar
+│   ├── plantilla-presentacion.md      # Guía del pitch de 5 minutos
+│   ├── plantilla-presentacion.pptx    # Las 6 láminas, listas para completar
 │   └── plantilla-anexo-prompts.md     # Formato del anexo obligatorio de uso de IA
 └── entregas/
     └── README.md                      # Instrucciones de entrega por equipo
@@ -482,12 +520,12 @@ Cada equipo entrega, al cierre del bloque técnico de la jornada, una carpeta co
 | 1 | Modelo y tablero de Cuentas por Cobrar | `.pbix` o carpeta PBIP | Modelo dimensional, medidas DAX documentadas |
 | 2 | Herramienta de benchmark XBRL | Enlace público a la aplicación en Lovable | Funcionando, con tabla de mapeo y tabla de hechos exportadas |
 | 3 | Informe ejecutivo | PDF, máximo 10 páginas | Portada, resumen ejecutivo, metodología, hallazgos A, hallazgos B, conclusiones, anexo de prompts de IA |
-| 4 | Presentación oral | `.pptx` o equivalente, máximo 12 láminas | Para defensa ante jurado |
+| 4 | Pitch | `.pptx` o equivalente, máximo 6 láminas | Para exponer ante el jurado |
 | 5 | Extensión del prototipo (opcional) | Enlace público | Funcionalidad adicional sobre la aplicación del entregable 2: por ejemplo, incorporar la cartera de ASC, simular escenarios o publicar el tablero de hallazgos |
 
 Las plantillas de los entregables 3 y 4 están en [`templates/`](templates/). Las instrucciones de entrega, en [`entregas/README.md`](entregas/README.md).
 
-**Presentación oral:** 12 minutos por equipo, seguidos de 5 minutos de preguntas del jurado.
+**Pitch:** 5 minutos por equipo, seguidos de 5 minutos de preguntas del jurado. Al minuto cinco se corta la exposición, haya llegado o no al cierre.
 
 ---
 
